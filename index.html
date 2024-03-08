@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="challenge-style.css">
+
+
+</head>
+
+
+<body>
+    <header>
+        <img src="Logo.png" class="logo-a" alt="Logo letra A">
+    </header>
+
+    <main class="main">
+        <section>
+            <textarea id="texto-encriptado" class="campo_texto" placeholder="Texto a encriptar"></textarea>
+
+            <div class="btn">
+                <p class="condicion">Sólo letras minúsculas y sin acentos</p>
+                <button class="btnEncriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btnDesencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+    </main>
+
+
+    <section class="campo-mensaje">
+        <img src="Imagenes/cat.jpeg" alt="Gato siamés con lentes" class="imagen-muñeco">
+        <h1 class="mensaje-vacio">Hablemos en secreto</h1>
+        <p class="ingrese-texto">Ingresa el texto que desees encriptar o desencriptar</p>
+        <textarea id="campo-mensaje" class="mensaje" placeholder="Resultado"></textarea>
+        <button onclick="copiarTexto()" class="btnCopiar">Copiar Texto</button>
+
+    </section>
+
+    <script src="challenge.js"></script>
+
+</body>
+
+</html>
